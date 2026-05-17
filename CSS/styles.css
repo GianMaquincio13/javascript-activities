@@ -1,0 +1,100 @@
+/* Pangunahing Disenyo ng Buong Webpage */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header para sa iyong Pangalan at Pamagat */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Layout Controller (Pinagdidikit ang Navigation at Content) */
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Disenyo ng Sidebar kung nasaan ang mga Buttons */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para sa bawat Button ng Activities */
+.sidebar button {
+    padding: 12px 15px;
+    background-color: #e2e8f0;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+/* Kulay ng Button kapag itinutok ang mouse o kapag ito ang aktibo */
+.sidebar button:hover, .sidebar button.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Ang Panel kung saan ipinapakita ang takbo ng Activity nahanap */
+.content-panel {
+    flex: 3;
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    min-height: 350px;
+}
+
+/* Itatago ang ibang activities kapag hindi pa pinipili */
+.tab-content {
+    display: none;
+}
+
+/* Kahon para sa mga Live Previews o Demos */
+.demo-box {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px dashed #cbd5e1;
+    background-color: #f8fafc;
+    border-radius: 4px;
+}
+
+/* Disenyo ng mga Action Buttons sa loob ng Activities */
+button.action-btn {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.action-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Disenyo para sa Error Logging sa Activity 5 */
+.error-text {
+    color: #dc2626;
+    font-family: monospace;
+    background: #fef2f2;
+    padding: 12px;
+    border-left: 4px solid #dc2626;
+    margin-top: 10px;
+}
